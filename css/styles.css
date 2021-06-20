@@ -13,11 +13,12 @@
     --footer-phone-mail: rgba(255, 255, 255, 0.6);
     --company-social-color: #AFB1B8;
 } 
-
+ 
 /* универсальный селектор */
 *{
     list-style: none;
     text-decoration: none;
+    color: inherit;
 }
 
 *{
@@ -71,8 +72,6 @@ height: auto;
 
 /* общие свойства ссылок */
 
-
-
 /* ссылки */
 .link {
   text-decoration: none;
@@ -83,6 +82,7 @@ height: auto;
     line-height: 1.143;
     letter-spacing: 0.02em;
     border-radius: 2px;
+   
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
@@ -126,7 +126,6 @@ height: auto;
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
-  color: inherit;
   
  }
 
@@ -406,6 +405,7 @@ justify-content: space-between;
  width: 44px;
  height: 44px;   
  border-radius: 50%;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .icons-ref:hover, 
@@ -527,6 +527,7 @@ margin-top: 9px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-social:hover,
 .svg-social:focus {
@@ -593,6 +594,7 @@ margin-top: 9px;
     margin-right: 8px;
     border-radius: 4px;
     border: none; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
    /* Фото портфолио */
@@ -732,6 +734,7 @@ margin-top: 9px;
     height: 92px;
     border: 1px solid #AFB1B8;
     fill: var(--company-social-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
   }
   
@@ -772,12 +775,9 @@ margin-top: 9px;
   height: 581px;
   background-color: var(--white-color);
   padding: 9px;
-  transition: opacity 2500ms cubic-bezier(0.215, 0.610, 0.355, 1), visibility 5000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  
 }
 
-.backdrop .is-hidden .modal{
-  transform: translate(-50%, -50%) scale(0);
-}
 
 .btn-modal-close {
   position: absolute;
@@ -814,6 +814,7 @@ margin-top: 9px;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 3000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 5000ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
